@@ -19,7 +19,9 @@ const App = {
   methods: {
     prev() {
       // когда нажимаем кнопку назад
+      if (this.activeIndex !== 0) {
       this.activeIndex --
+      }
     },
     reset() {
       // начать заново
